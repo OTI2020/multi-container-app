@@ -26,13 +26,12 @@ services:
     #     - path: ./app
     #       target: /usr/src/app
     #       action: sync
-# TODO #22 - ERROR: services.todo-app Additional property develop is not allowed
+    # TODO #22 - ERROR: services.todo-app Additional property develop is not allowed
   todo-database:
     image: mongo:6
     #volumes: 
     #  - database:/data/db
     ports:
       - 27017:27017
-
-#volumes:
+  #volumes:
   #database:
