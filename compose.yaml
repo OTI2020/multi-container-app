@@ -19,13 +19,13 @@ services:
     ports:
       - 3000:3000
       - 35729:35729
-    # develop:
-    #   watch:
-    #     - path: ./app/package.json
-    #       action: rebuild
-    #     - path: ./app
-    #       target: /usr/src/app
-    #       action: sync
+    develop:
+      watch:
+        - path: ./app/package.json
+          action: rebuild
+        - path: ./app
+          target: /usr/src/app
+          action: sync
     # TODO #22 - ERROR: services.todo-app Additional property develop is not allowed
   todo-database:
     image: mongo:6
